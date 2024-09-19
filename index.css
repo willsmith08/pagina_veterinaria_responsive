@@ -11,7 +11,7 @@ header{
     display: flex;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: 3.5%;
     z-index: 100;
 }
 .logo_pagina{
@@ -363,6 +363,10 @@ a {
         background: #4b4b4b;
         justify-content: center;
         align-items: center;
+        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
     .PHONE{
         height: 18px;
@@ -373,8 +377,14 @@ a {
     .phone-contac{
         display: none;
     }
+    .soc{
+        margin: 0 0.5%;
+    }
     .redes_sociales{
         display: none;
+    }
+    .sociale{
+        width: 18px;
     }
     header{
         display: flex;
