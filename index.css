@@ -216,12 +216,16 @@ a {
     justify-content: center;
 }
 .recomendaciones div{
-    margin: 10px 10px;
     width: 90%;
     display: flex;
     justify-content: center;
-    gap: 2%;
     flex-wrap: wrap;
+}
+.recomendaciones img{
+    margin: 10px;
+}
+.arriba-header{
+    display: none;
 }
 @keyframes slide{
     0%, 20%{margin-left: 0%;}
@@ -350,5 +354,33 @@ a {
     }
     #check:checked ~ .menu{
         right: 0;
+    }
+}
+@media (max-width: 480px) {
+    .arriba-header{
+        display: flex;
+        height: 30px;
+        background: #4b4b4b;
+        justify-content: center;
+        align-items: center;
+    }
+    .PHONE{
+        height: 18px;
+    }
+    .arriba-header b{
+        color: #fff;
+    }
+    .phone-contac{
+        display: none;
+    }
+    .redes_sociales{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .redes_sociale{
+        display: flex;
     }
 }
