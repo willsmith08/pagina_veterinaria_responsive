@@ -17,7 +17,6 @@ header{
 .logo_pagina{
     width: 130px;
 }
-
 header p{
     font-family: sans-serif, bold;
     font-size: 20px;
@@ -204,13 +203,25 @@ a {
     justify-content: center;
 }
 .titu_recomen{
-    width: 90%;
+    width: 72%;
     margin-top: 45px;
     background: #15337D;
     padding: 10px;
     color: #fff;
     text-align: center;
     font-family: sans-serif;
+}
+.recomendaciones{
+    display: flex;
+    justify-content: center;
+}
+.recomendaciones div{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
 }
 @keyframes slide{
     0%, 20%{margin-left: 0%;}
