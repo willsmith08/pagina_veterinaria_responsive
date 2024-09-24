@@ -284,10 +284,10 @@ footer{
 }
 .contenido{
     width: 450px;
+    height: 350px;
     align-self: center;
+    align-content: center;
     text-align: center;
-}
-.contenido:nth-child(2){
     border-right: 3px solid #fff ;
     border-left: 3px solid #fff ;
 }
@@ -323,17 +323,11 @@ footer{
     }
 }
 @media (max-width: 1000px) {
-    .contenido:nth-child(2){
-        border-left: none;
-        border-right: none;
-        border-top: 3px solid #fff ;
-        border-bottom: 3px solid #fff ;
+    .qr{
+        width: 250px;
     }
     .compra, .cifras{
         display: none;
-    }
-    .slides{
-        margin-top: 50px;
     }
     .nues img{
         width: 40%;
@@ -378,7 +372,8 @@ footer{
         height: 53px;
         width: 100%;
         align-items: center;
-        position: fixed;
+        position: sticky;
+        top: 150px;
         z-index: 90;
     }
     .container_debajo_header nav{
@@ -434,7 +429,6 @@ footer{
         justify-content: center;
         align-items: center;
         position: relative;
-        position: sticky;
     }
     .PHONE{
         height: 18px;
@@ -458,9 +452,12 @@ footer{
         display: flex;
         justify-content: center;
         position: sticky;
-        top: 3.8%;
     }
     .redes_sociale{
         display: flex;
+    }
+    .container_debajo_header{
+        position: sticky;
+        top: 150px;
     }
 }
