@@ -31,6 +31,7 @@ header p{
 }
 .socia{
     margin: 0 3%;
+    cursor: pointer;
 }
 .social{
     height: 35px;    
