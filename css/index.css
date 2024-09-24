@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: relative;
+    background-color: #088199;
+    height: 150px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo_pagina{
+    width: 130px;
+}
+header p{
+    font-family: sans-serif, bold;
+    font-size: 20px;
+    position: absolute;
+    right: 3.5%;
+    top: 1%;
+}
+.redes_sociales{
+    position: absolute;
+    right: 7%;
+    display: flex;
+}
+.socia{
+    margin: 0 3%;
+    cursor: pointer;
+}
+.social{
+    height: 35px;    
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.opcs_pantallas{
+    display: flex;
+    align-items: center;
+    background-color: #75A933;
+    width: 60%;
+    height: 90px;
+    align-content: center;
+    position: absolute;
+    right: 0%;
+    top: 74%;
+    border-radius: 1.5vw 0 0 1.5vw;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+.opc_pantalla, .opc_pantalla1{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    transition: 0.5s;
+}
+.opc_pantalla2{
+    height: 40px;
+}
+.cerrar-menu, .abrir-menu{
+    font-size: 70px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+.opc_pantalla:hover, .abrir-menu:hover, .cerrar-menu:hover
+{
+    color: #dcdcdc;
+}
+#check, .menu{
+    display: none;
+}
+.container_debajo_header{
+    display: none;
+}
+.slides{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.slides  ul {
+    padding: 0%;
+    width: 300%;
+    display: flex;
+    width: 300%;
+
+    animation: slide 20s infinite alternate step-end;
+}
+.slides li:nth-child(1){
+    opacity: 1;
+    animation: fade 20s infinite;
+    animation-delay: 0s;
+}
+.slides li:nth-child(2){
+    opacity: 1;
+    animation: fade 20s infinite;
+    animation-delay: 4s;
+}
+.slides li:nth-child(3){
+    opacity: 1;
+    animation: fade 20s infinite;
+    animation-delay: 8s;
+}
+.slides li{
+    width: 100%;
+    height: 35vw;
+    list-style: none;
+}
+.slides img{
+    width: 100%;
+    height: 100%;
+}
+.phone-contac{
+    display: none;
+}
+.compra{
+    position: absolute;
+    right: 0%;
+    top: 450px;
+    width: 85px;
+    height: 85px;
+    position: fixed;
+    z-index:1000;
+}
+.carrito{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    background-size: cover;
+    background-position: center;
+    opacity: 40%;
+    width: 85px;
+    height: 85px;
+    z-index:-1;
+    
+}
+.carrito_compra{
+    position: relative;
+    left: 8.5%;
+    top: 6%;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-image: url(/Index-imgs/img\ carrito_compra.png);
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+}
+.franja_verde{
+    margin-bottom: 0.5%;
+    background-color: #75A933;
+    height: 38px;
+}
+.nuestra_tienda{
+    display: flex;
+    justify-content: center;
+}
+.nues div{
+    text-align: center;
+    margin-top: 30px;
+}
+.nues a{
+    background: #088199;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+.nues a:hover{
+    text-shadow: 1.5px 1.5px 5px #767676;
+    box-shadow: 1px 1px 5px #767676;
+    transition: 0.3s;
+}
+.nues{
+    font-family: sans-serif;
+    width: 75%;
+}
+.nues img{
+    float: right;
+    margin-left: 2%;
+}
+.nues h1{
+    color: #0F5FA9;
+    text-align: center;
+}
+.nues p{
+    color: #000;
+    font-size: 18px;
+    text-align: justify;
+}
+.ti{
+    display: flex;
+    justify-content: center;
+}
+.titu_recomen{
+    width: 72%;
+    margin-top: 45px;
+    background: #15337D;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+}
+.recomendaciones{
+    display: flex;
+    justify-content: center;
+}
+.recomendaciones div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.recomendaciones img{
+    margin: 10px;
+    border-radius: 10px;
+}
+.arriba-header{
+    display: none;
+}
+.cifras{
+    height: 55vh;
+    position: relative;
+    margin-top: 10px;
+    align-content: center;
+}
+.backgroud-cifras{
+    width: 100%;
+    height: 100%;
+    background-image: url(/Index-imgs/img\ fondo\ cifras.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(50%);
+}
+.cifras h1{
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.cifras span{
+    color: #10C6BB;
+}
+.contenido-cifras{
+    display: flex;
+    flex: 1;
+}
+.contenedor_cifras{
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    flex: 1;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.contenedor_cifras:nth-child(2){
+    border-right: 3px dotted white ;
+    border-left: 3px dotted white ;
+}
+footer{
+    min-height: 400px;
+    background-color: #011820;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.qr{
+    margin-top: 5px;
+}
+.contenido{
+    width: 450px;
+    height: 350px;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    border-right: 3px solid #fff ;
+    border-left: 3px solid #fff ;
+} 
+@keyframes slide{
+    0%, 20%{margin-left: 0%;}
+
+    25%, 45%{margin-left: -100%;}
+
+    50%, 70%{margin-left: -200%;}
+}
+
+@keyframes fade {
+    0%, 20% { opacity: 1;}
+
+    30%, 50% { opacity: 0;}
+    60%, 80% { opacity: 1;}
+}
+@media (max-width: 1085px) {
+    .opc_pantalla{
+        font-size: 17px;
+    }
+    .compra{
+        position: absolute;
+        top: 400px;
+        position: fixed;
+        z-index:1000;
+    }
+}
+@media (max-width: 1209px) {
+    .opcs_pantallas{
+        height: 80px;
+        width: 70%;
+    }
+}
+@media (max-width: 1000px) {
+    .contenido{
+        border-right: none;
+        border-left: none;
+    }
+    .qr{
+        width: 250px;
+    }
+    .compra, .cifras{
+        display: none;
+    }
+    .nues img{
+        width: 40%;
+    }
+    .carrito-deb{
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 90px;
+    }
+    .opcs_pantallas, header p{
+        display: none;
+    }
+    .compra{
+        position: absolute;
+        top: 40%;
+    }
+    .phone-contac{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 4%;
+        top: 20%;
+    }
+    .opc_pantalla1{
+        display: block;
+        
+    }
+    .phone-contac b{
+        font-family: sans-serif;
+        font-size: 22px;
+        color: #fff;
+    }
+    .redes_sociales{
+        position: absolute;
+        top: 50%;
+        right: 8%;
+    }
+    .container_debajo_header{
+        display: flex;
+        position: relative;
+        background: #75A933;
+        height: 53px;
+        width: 100%;
+        align-items: center;
+        position: sticky;
+        top: 150px;
+        z-index: 90;
+    }
+    .container_debajo_header nav{
+        display: flex;
+        position: absolute;
+        right: 3%;
+    }
+    .cerrar-menu, .abrir-menu{
+        display: block;
+    }
+    .abrir-menu{
+        position: absolute;
+        left: 4%;
+        top: 91%;
+    }
+    .menu{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #75A933;
+        right: -100%;
+        top: 0;
+        padding: 100px 0px;
+        z-index: 1000;
+        transition: 0.8s;
+        text-align: center;
+    }
+    .menu a{
+        text-align: center;
+        display: block;
+        padding: 20px;
+        color: #fff;
+        font-family: sans-serif;
+    }
+    .menu a:hover{
+        color: #dcdcdc;
+    }
+    .cerrar-menu{
+        position: absolute;
+        top: 30px;
+        right: 60px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+}
+@media (max-width: 480px) {
+    .arriba-header{
+        display: flex;
+        height: 30px;
+        background: #4b4b4b;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .PHONE{
+        height: 18px;
+    }
+    .arriba-header b{
+        color: #fff;
+    }
+    .phone-contac{
+        display: none;
+    }
+    .soc{
+        margin: 0 0.5%;
+    }
+    .redes_sociales{
+        display: none;
+    }
+    .sociale{
+        width: 18px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+    }
+    .redes_sociale{
+        display: flex;
+    }
+    .container_debajo_header{
+        position: sticky;
+        top: 150px;
+    }
+}
