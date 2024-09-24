@@ -323,6 +323,10 @@ footer{
     }
 }
 @media (max-width: 1000px) {
+    .contenido{
+        border-right: none;
+        border-left: none;
+    }
     .qr{
         width: 250px;
     }
