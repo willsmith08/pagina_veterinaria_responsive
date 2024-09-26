@@ -63,6 +63,7 @@ a {
 }
 .opc_pantalla2{
     height: 40px;
+    cursor: pointer;
 }
 .cerrar-menu, .abrir-menu{
     font-size: 70px;
