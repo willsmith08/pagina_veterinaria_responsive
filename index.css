@@ -295,6 +295,84 @@ footer{
     border-right: 3px solid #fff ;
     border-left: 3px solid #fff ;
 } 
+.ini-regis{
+    width: 250px;
+    height: 150px;
+    background: #eeee;
+    z-index: 1000;
+    position: absolute;
+    right: 1%;
+    top: 205px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 1.5px 1.5px 5px #767676;
+    position: fixed;
+    display: none;
+}
+.ini-regis a:nth-child(1){
+    background: #0A988F;
+    padding: 13px 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 22px;
+}
+.ini-regis p{
+    color: #000000da;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 43px;
+    right: 40px;
+}
+.regi{
+    background: #fff;
+    padding: 10px 50px;
+    border: 3px solid #0A988F;
+    color: #0A988F;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+#checked-user, #checked-noti{
+    display: none;
+}
+#checked-user:checked ~ .ini-regis{
+    display: block;
+}
+#checked-noti:checked ~ .notificaciones{
+    position: absolute;
+    right: 0%;
+    top: 90px;
+    display: block;
+}
+.notificaciones{
+    width: 300px;
+    height: 250px;
+    background: #fff;
+    position: fixed;
+    z-index: 10000;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 5px #767676;
+    text-align: center;
+    display: none;
+}
+.notificaciones header{
+    background: #C8C8C8;
+    height: 100px;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-shadow: 1.5px 1.5px 5px #767676;
+}
 @keyframes slide{
     0%, 20%{margin-left: 0%;}
 
@@ -327,6 +405,81 @@ footer{
     }
 }
 @media (max-width: 1000px) {
+    .ini-regi{
+        width: 250px;
+        height: 150px;
+        background: #eeee;
+        z-index: 1000;
+        position: absolute;
+        right: 1%;
+        top: 205px;
+        border-radius: 10px;
+        text-align: center;
+        align-content: center;
+        box-shadow: 1.5px 1.5px 5px #767676;
+        position: fixed;
+        display: none;
+    }
+    .ini-regi a:nth-child(1){
+        background: #0A988F;
+        padding: 13px 50px;
+        border-radius: 10px;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 18px;
+        position: absolute;
+        top: 10px;
+        right: 22px;
+    }
+    .ini-regi p{
+        color: #000000da;
+        margin-top: 30px;
+        font-family: sans-serif;
+        font-size: 14px;
+        position: absolute;
+        top: 43px;
+        right: 40px;
+    }
+    #user2{
+        display: none;
+    }
+    .user2 img{
+        cursor: pointer;
+    }
+    #user2:checked ~ .ini-regi{
+        display: block;
+    }
+    .notificacion header{
+        background: #C8C8C8;
+        height: 100px;
+        color: #000;
+        font-family: sans-serif;
+        font-size: 20px;
+        box-shadow: 1.5px 1.5px 5px #767676;
+    }
+    #noti2{
+        display: none;
+    }
+    .noti2 img{
+        cursor: pointer;
+    }
+    .notificacion{
+        position: absolute;
+        right: 0%;
+        top: 203px;
+        width: 300px;
+        height: 250px;
+        background: #fff;
+        position: fixed;
+        z-index: 10000;
+        border-radius: 10px;
+        box-shadow: 1.5px 1.5px 5px #767676;
+        text-align: center;
+        display: none;
+    }
+    #noti2:checked ~ .notificacion{
+        display: block;
+    }
     .contenido{
         border-right: none;
         border-left: none;
