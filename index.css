@@ -373,6 +373,9 @@ footer{
     font-size: 20px;
     box-shadow: 1.5px 1.5px 5px #767676;
 }
+.iniciar_sesion2{
+    display: none;
+}
 @keyframes slide{
     0%, 20%{margin-left: 0%;}
 
@@ -583,6 +586,21 @@ footer{
     }
 }
 @media (max-width: 480px) {
+    .iniciar_sesion2{
+        display: block;
+        background: #0A988F;
+        padding: 13px 50px;
+        border-radius: 10px;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 18px;
+        position: absolute;
+        top: 10px;
+        right: 22px;
+    }
+    .iniciar_sesion1{
+        display: none;
+    }
     .arriba-header{
         display: flex;
         height: 30px;
