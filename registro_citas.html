@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="registro_citas.css">
     <link rel="icon" href="Index-imgs/LOGO.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,76 +100,17 @@
                 </div>
             </nav>
         </div>
-        <div class="elegirnos-contenedor-titulo">
-            <h1>¿Por qué elegirnos para cuidar de tus mascotas?</h1>
-        </div>
-        <div class="elegirnos-contenido-todo">
-            <div class="elegirnos-contenido">
-                <img src="servicios-imgs/img por.png" alt="">
-                <p>En pet & cat, nos dedicamos a brindar la mejor atención
-                    veterinaria posible, respaldada por años de experiencia y un 
-                    profundo amor por los animales. Nuestro equipo de veterinarios 
-                    altamente  capacitados está comprometido con la salud y el bienestar
-                    de tus  mascotas, ofreciendo un trato cálido y personalizado en cada
-                    visita.  Además, contamos con instalaciones modernas y equipos de 
-                    última  generación para garantizar un servicio de alta calidad,
-                    confía en nosotros para cuidar de tus fieles compañeros.
-                </p>
-            </div>
-        </div>
-        <div class="titulo_nuestros-servicios">
-            <h2>NUESTROS SERVICIOS</h2>
-        </div>
-        <div class="nuestros_servicios">
-            <div class="servicios">
-                <div class="servicio">
-                    <div class="logo_servicio">
-                        <img src="servicios-imgs/logo consulta general.png" alt="">
-                    </div>
-                    <h4>Consulta general</h4>
-                    <a href="registro_citas.html"><button>Agendar cita</button></a>
-                </div>
-                <div class="servicio">
-                    <div class="logo_servicio">
-                        <img src="servicios-imgs/logo consulta nutricional.png" alt="">
-                    </div>
-                    <h4>Consulta nutricional</h4>
-                    <a href="registro_citas.html"><button>Agendar cita</button></a>
-                </div>
-                <div class="servicio">
-                    <div class="logo_servicio">
-                        <img src="servicios-imgs/img tratamiento de herida.png" alt="">
-                    </div>
-                    <h4>Tratamiento de herida</h4>
-                    <a href="registro_citas.html"><button>Agendar cita</button></a>
-                </div>
-                <div class="servicio">
-                    <div class="logo_servicio">
-                        <img src="servicios-imgs/img vacunas.png" alt="">
-                    </div>
-                    <h4>Vacunas</h4>
-                    <a href="registro_citas.html"><button>Agendar cita</button></a>
-                </div>
-                <div class="servicio">
-                    <div class="logo_servicio">
-                        <img src="servicios-imgs/img urgencias.png" alt="">
-                    </div>
-                    <h4>Urgencias</h4>
-                    <a href="registro_citas.html"><button>Agendar cita</button></a>
-                </div>
-                <div class="servicio">
-                    <div class="logo_servicio">
-                        <img src="servicios-imgs/img cirugias.png" alt="">
-                    </div>
-                    <h4>Cirugias</h4>
-                    <a href="registro_citas.html"><button>Agendar cita</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="servicios-especiales-todo">
-            <h1><b>Servicios especiales</b></h1>
-            <div class="contenido-servicios-especiales"> 
-                <div class="formularios">
+        
+
+
+        <div class="backgroud_cita">
+            <h1>Agenda tu cita</h1>
+            <form action="">
+                <div class="formulario1">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario">
+                    <label for="gmail">Gmail</label>
+                    <input type="email" id="gmail">
                     <main class="contenedor">
                         <section class="mes">
                             <h2 class="nombre_mes">AGOSTO</h2>
@@ -222,42 +163,60 @@
                             <div class="calendario_dia">31</div>
                         </section>
                     </main>
-                    <div class="formulario">
-                        <form action="" class="formulario1">
-                            <select name="servicios_especiales" id="servicios_especiales">
-                                <option value="" disabled selected>Servicios</option>
-                                <option value="Estetica">Estetica</option>
-                                <option value="Peluqueria">Peluqueria</option>
-                            </select>
-                            <select name="raza_mascota" id="raza_mascota">
-                                <option value="" disabled selected>Raza</option>
-                            </select>
-                            <select name="hora" id="hora">
-                                <Option value="" disabled selected>Hora</Option>
-                            </select>
-                            <select name="edad" id="edad">
-                                <option value="" disabled selected>Edad</option>
-                                <option value="">Meses</option>
-                                <option value="">Años</option>
-                            </select>
-                        </form>
-                        <div class="formulario2">
-                            <div class="Perro_gato">
-                                <div class="gato"><img src="servicios-imgs/Cat Profile.png" alt="¡ERROR!"></div>
-                                <div class="perro"><img src="servicios-imgs/selccion dog.png" alt="¡ERROR!"></div>
-                            </div>
-                            <input type="text" id="usuario" placeholder="Usuario">
-                            <button type="submit" id="apartar_cupo">Apartar cupo</button>
-                        </div>
+                </div>
+                <div class="formulario2">
+                    <label for="celular">Celular</label>
+                    <input type="number" id="celular">
+                    <label for="servicio">Servicios</label>
+                    <select id="servicio">
+                        <option value="">Consulta general</option>
+                        <option value="">Consulta nutricional</option>
+                        <option value="">Tratamiento de herida</option>
+                        <option value="">Vacunas</option>
+                        <option value="">Urgencias</option>
+                        <option value="">Cirugias</option>
+                    </select>
+                    <label for="especialista">Especialista</label>
+                    <input type="text" id="especialista">
+                    <div class="boton-container">
+                        <input type="radio" id="boton1" name="opcion" checked>
+                        <label for="boton1">
+                            <img src="citas-imgs/Cat Profile.png" alt="Imagen 1">
+                        </label>
+                
+                        <input type="radio" id="boton2" name="opcion">
+                        <label for="boton2">
+                            <img src="citas-imgs/Dog.png" alt="Imagen 2">
+                        </label>
                     </div>
+                    <button type="submit">Apartar cita</button>
                 </div>
-                <div class="tex-img-info">
-                    <img src="servicios-imgs/img-servicio-especial.png" alt="" class="img-servicio-especial">
-                    <h4>Estetica y peluqueria</h4>
-                    <p>Con amplias áreas de juego, personal dedicado y atención  individualizada, garantizamos que tu mascota se divierta y esté bien  cuidada.</p>
-                </div>
-            </div>
+            </form>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <footer>
             <div class="contenido">
                 <h3 class="t_pie">CONTACTANOS</h3>
@@ -283,9 +242,5 @@
                 <h4>De lunes a viernes 9 : 00 Am a 6 : 00 Pm</h4>
             </div>
         </footer>
-        <a href="#"><div class="compra">
-            <div class="carrito"></div>
-            <div class="carrito_compra"></div>
-        </div></a>
 </body>
 </html>
