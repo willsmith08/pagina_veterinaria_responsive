@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="registro_citas.css">
+    <link rel="stylesheet" href="pago.css">
     <link rel="icon" href="Index-imgs/LOGO.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +41,7 @@
                 <a href="servicios.html"><b>SERVICIOS</b></a>
                 <a href="promociones.html"><b>PROMOCIONES</b></a>
                 <a href="nosotros.html"><b>NOSOTROS</b></a>
-                <a href="registro_citas.html"><b>CITAS</b></a>
+                <a href="citas.html"><b>CITAS</b></a>
                 <label for="check" class="cerrar-menu">
                     &#215
                 </label>
@@ -51,7 +51,7 @@
                 <a href="servicios.html" class="opc_pantalla"><b>SERVICIOS</b></a>
                 <a href="promociones.html" class="opc_pantalla"><b>PROMOCIONES</b></a>
                 <a href="nosotros.html" class="opc_pantalla"><b>NOSOTROS</b></a>
-                <a href="registro_citas.html" class="opc_pantalla"><b>CITAS</b></a>
+                <a href="citas.html" class="opc_pantalla"><b>CITAS</b></a>
                 <nav class="opc_pantalla1">
                     <input type="checkbox" id="checked-user">
                     <label for="checked-user" class="opc_pantall2">
@@ -76,7 +76,7 @@
             </nav>
         </header>
         <div class="container_debajo_header">
-            <a href="carrito_compra.html"><img src="Index-imgs/carrito.png" alt="" class="carrito-deb"></a>
+            <a href="#"><img src="Index-imgs/carrito.png" alt="" class="carrito-deb"></a>
             <nav>
                 <input type="checkbox" id="user2">
                 <label for="user2" class="user2">
@@ -86,7 +86,7 @@
                     <a href="iniciar_sesion.html" class="iniciar_sesion1">Iniciar sesion</a>
                     <a href="iniciar_sesion-telefono.html" class="iniciar_sesion2">Iniciar sesion</a>
                     <p><b>¿Aun no tienes cuenta?</b></p>
-                    <a href="registrarse.html" class="regi">Registrarse</a>
+                    <a href="" class="regi">Registrarse</a>
                 </div>
                 <input type="checkbox" id="noti2">
                 <label for="noti2" class="noti2">
@@ -100,96 +100,94 @@
                 </div>
             </nav>
         </div>
-        <div class="backgroud_cita">
-            <h1>Agenda tu cita</h1>
-            <form action="">
-                <div class="formulario1">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" id="usuario">
-                    <label for="gmail">Gmail</label>
-                    <input type="email" id="gmail">
-                    <main class="contenedor">
-                        <section class="mes">
-                            <h2 class="nombre_mes">AGOSTO</h2>
-                        </section>
-                        <section class="dias">
-                            <div class="dias_item">Domingo</div>
-                            <div class="dias_item">Lunes</div>
-                            <div class="dias_item">Martes</div>
-                            <div class="dias_item">Miercoles</div>
-                            <div class="dias_item">Jueves</div>
-                            <div class="dias_item">Viernes</div>
-                            <div class="dias_item">Sabado</div>
-                        </section>
-                
-                        <section class="calendario">
-                            <div class="calendario_dia1">28</div>
-                            <div class="calendario_dia1">29</div>
-                            <div class="calendario_dia1">30</div>
-                            <div class="calendario_dia1">31</div>
-                            <div class="calendario_dia">1</div>
-                            <div class="calendario_dia">2</div>
-                            <div class="calendario_dia">3</div>
-                            <div class="calendario_dia">4</div>
-                            <div class="calendario_dia">5</div>
-                            <div class="calendario_dia">6</div>
-                            <div class="calendario_dia">7</div>
-                            <div class="calendario_dia">8</div>
-                            <div class="calendario_dia">9</div>
-                            <div class="calendario_dia">10</div>
-                            <div class="calendario_dia">11</div>
-                            <div class="calendario_dia">12</div>
-                            <div class="calendario_dia">13</div>
-                            <div class="calendario_dia">14</div>
-                            <div class="calendario_dia">15</div>
-                            <div class="calendario_dia">16</div>
-                            <div class="calendario_dia">17</div>
-                            <div class="calendario_dia">18</div>
-                            <div class="calendario_dia">19</div>
-                            <div class="calendario_dia">20</div>
-                            <div class="calendario_dia">21</div>
-                            <div class="calendario_dia">22</div>
-                            <div class="calendario_dia">23</div>
-                            <div class="calendario_dia">24</div>
-                            <div class="calendario_dia">25</div>
-                            <div class="calendario_dia">26</div>
-                            <div class="calendario_dia">27</div>
-                            <div class="calendario_dia">28</div>
-                            <div class="calendario_dia">29</div>
-                            <div class="calendario_dia">30</div>
-                            <div class="calendario_dia">31</div>
-                        </section>
-                    </main>
-                </div>
-                <div class="formulario2">
-                    <label for="celular">Celular</label>
-                    <input type="number" id="celular">
-                    <label for="servicio">Servicios</label>
-                    <select id="servicio">
-                        <option value="">Consulta general</option>
-                        <option value="">Consulta nutricional</option>
-                        <option value="">Tratamiento de herida</option>
-                        <option value="">Vacunas</option>
-                        <option value="">Urgencias</option>
-                        <option value="">Cirugias</option>
+        <button class="atras"><b>Atras</b></button>
+        <div class="contenido-pago">
+            <div class="produ">
+                <p class="produ-p">Resumen de la compra</p>
+                <div class="pro">
+                    <img src="pago-imgs/img1.png" alt="">
+                    <p>Agility Gold Premios Gatos X 100 Grs</p>
+                    <select name="" id="">
+                        <option value="">1</option>
                     </select>
-                    <label for="especialista">Especialista</label>
-                    <input type="text" id="especialista">
-                    <div class="boton-container">
-                        <input type="radio" id="boton1" name="opcion" checked>
-                        <label for="boton1">
-                            <img src="citas-imgs/Cat Profile.png" alt="Imagen 1">
-                        </label>
-                
-                        <input type="radio" id="boton2" name="opcion">
-                        <label for="boton2">
-                            <img src="citas-imgs/Dog.png" alt="Imagen 2">
-                        </label>
-                    </div>
-                    <button type="submit">Apartar cita</button>
                 </div>
-            </form>
+                <div class="pro">
+                    <img src="pago-imgs/img2.png" alt="">
+                    <p>Chunky Gatos Salmón Y Cordero 8 Kg</p>
+                    <select name="" id="">
+                        <option value="">1</option>
+                    </select>
+                </div>
+                <div class="pro">
+                    <img src="pago-imgs/img3.png" alt="">
+                    <p>Proplan Exigent 3kilos</p>
+                    <select name="" id="">
+                        <option value="">1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pago">
+                <p class="pago-p">Metodo de pago</p>
+                <div class="contra-transfe">
+                    <input type="radio" id="transfe" name="tipo-pago" >
+                    <label for="transfe" class="l">
+                        <img src="pago-imgs/Bank Cards.png" alt="">
+                    </label>
+                    <form action="" class="contenedor-pago">
+                        <label for="num-tarjeta" class="num-tarjeta"><b>Numero de tarjeta</b></label>
+                        <input type="number" id="num-tarjeta" placeholder="1234 5678 9101 1213">
+                        <div class="img-tarjetas">
+                            <img src="pago-imgs/mastercard.png" alt=""><img src="pago-imgs/visa.png" alt="">
+                        </div>
+                        <div class="fecha-cvc">
+                            <div>
+                                <label for="fecha" class="fecha">Fecha de caducidad</label>
+                                <input type="date" id="fecha">
+                            </div>
+                            <div>
+                                <label for="cvc" class="cvc"><b>CVC</b></label>
+                                <input type="number" id="cvc">
+                            </div>
+                        </div>
+                        <button type="submit" class="pagar"><b>Pagar</b></button>
+                    </form>
+                    <input type="radio" id="contra" name="tipo-pago" checked>
+                    <label for="contra" class="l">
+                        <img src="pago-imgs/entrega.png" alt="">
+                    </label>
+                    <div class="contenedor-reco">
+                        <label for="usuario" class="usuario"><b>Usuario</b></label>
+                        <input type="text" id="usuario">
+                        <div class="can"><b>Cantidad productos: 3</b></div>
+                        <button type="submit" class="apartar"><b>Apartar</b></button>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <footer>
             <div class="contenido">
                 <h3 class="t_pie">CONTACTANOS</h3>
