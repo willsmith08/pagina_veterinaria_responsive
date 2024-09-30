@@ -224,122 +224,170 @@ footer{
     background-size: cover;
 }
 
-form{
-    margin-top: 15px;
-    background-size: cover;
+
+
+
+
+
+
+.contenodor_info{
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    position: relative;
+}
+.img_nosotros{
+    height: 35vw;
+}
+.contenedor_vision{
+    background-color: #fff;
+    width: 9%;
+    height: 9vw;
+    position: absolute;
+    top: 3vw;
+    left: 40%;
+    border-radius: 6pc;
+    align-items: center;
+    align-content: center;
+}
+.contenedor_vision img{
+    height: 7.5vw;
+}
+.contenedor_mision{
+    background-color: #fff;
+    width: 9%;
+    height: 9vw;
+    position: absolute;
+    top: 20vw;
+    left: 40%;
+    border-radius: 6pc;
+    align-items: center;
+    align-content: center;
+}
+.contenedor_mision img{
+    height: 7.5vw;
+}
+.contendor_info_text{
+    width: 85%;
+    text-align: center;
+}
+.contendor_info_text h3{
+    font-size: 2.5vw;
+    color: #0a559c;
+    text-align: justify;
+}
+.contendor_info_text p{
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    text-align: justify
+}
+.contendor_info_text button{
+    background-color: #17275F;
+    width: 35%;
+    height: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 0.7vw;
+    margin-top: 2.4vw;
+    font-size: 1.15vw;
+    display: inline-block;
+    cursor: pointer;
+}
+.contendor_info_text button::before{
+    content: "Amor y cuidados";
+}
+.contendor_info_text button:hover::before{
+    content: "Amor y cuidados ♡";
+}
+.contenedor_equipo{
+    text-align: center;
+    background-color: #1A446A;
+    height: 34vw;
+    color: #fff;
+}
+.contenedor_equipo h3{
+    padding-top: 1%;
+    font-size: 2vw;
+}
+.contenido_equipo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 3vw;
+    align-items: center;
+    align-content: center;
+}
+.persona img{
+    height: 20vw;
+}
+.persona h4{
+    font-size: 1.3vw;
+}
+.persona h5{
+    font-size: 1.2vw;
+}
+.contenido_equipo{
+    font-family: sans-serif;
+}
+.flecha, .flecha1{
+    height: 3.5vw;
+}
+.flecha1{
+    position: relative;
+    left: 70%;
+}
+
+
+
+.cifras{
+    height: 55vh;
+    position: relative;
+    margin-top: 10px;
+    align-content: center;
+}
+.backgroud-cifras{
+    width: 100%;
+    height: 100%;
+    background-image: url(Index-imgs/img\ de\ fondo-cifras.png);
     background-position: center;
-    background-image: url(registrarse-imgs/fondo.png);
-    min-height: 850px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(50%);
 }
-.formulario1, .formulario2{
-    border-radius: 10px;
-    border: 4px solid #fff;
-    margin-top: 50px;
-    background-color: #0000005b;
-    width: 800px;
-    min-height: 350px;
+.cifras h1{
+    color: #fff;
+    font-size: 45px;
     text-align: center;
-    align-content: center;
-}
-.formulario1 h1, .formulario2 h1{
     font-family: sans-serif;
-    color: #FF5D5D;
 }
-.conte-forms{
+.cifras span{
+    color: #10C6BB;
+}
+.contenido-cifras{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    flex: 1;
 }
-.conte-forms label{
-    display: block;
-    text-align: justify;
-    color: #fff;
+.contenedor_cifras{
+    font-size: 1.5vw;
     font-family: sans-serif;
-    margin: 0 10px 0 10px;
-}
-.conte-forms input{
-    width: 250px;
-    height: 30px;
-    margin: 0 10px 50px 10px;
-    border-radius: 5px;
-    border: none;
-}
-.formulario2{
-    margin-bottom: 20px;
-    color: #fff;
-}
-.form-pel{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin: 0 10px;
-}
-.form-pel label{
-    display: block;
-    text-align: justify;
-}
-.form-pel input{
-    width: 230px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-}
-.form-pel select{
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-}
-#autorizacion{
-    margin-left: 5%;
-}
-.autorizacion, #autorizacion{
-    margin: 10px 0;
-}
-.boton-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.boton-container input[type="radio"] {
-    display: none; 
-}
-.boton-container label {
+    flex: 1;
+    position: relative;
     text-align: center;
-    align-content: center;
-    width: 45px;
-    height: 45px; 
-    border: 4px solid #fff; 
-    border-radius: 50px; 
-    cursor: pointer;
-}
-.boton-container img {
-    height: 35px;
-}
-input[type="radio"]:checked + label {
-    background-color: #3355AB; 
-    border-color: #fff; 
-}
-.formulario2 button{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #07B0A6;
     color: #fff;
-    border: none;
-    cursor: pointer;
 }
+.contenedor_cifras:nth-child(2){
+    border-right: 3px dotted white ;
+    border-left: 3px dotted white ;
+}
+
+
+
+
+
 
 
 
@@ -394,9 +442,11 @@ input[type="radio"]:checked + label {
     }
 }
 @media (max-width: 1000px) {
-    .formulario1, .formulario2{
-        width: 90%;
-        min-height: 200px;
+    .contenodor_info{
+        margin-top: 10px;
+    }
+    .cifras{
+        display: none;
     }
     .ini-regi{
         width: 250px;

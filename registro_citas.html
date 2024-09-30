@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="registrarse.css">
+    <link rel="stylesheet" href="registro_citas.css">
     <link rel="icon" href="Index-imgs/LOGO.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,86 +100,96 @@
                 </div>
             </nav>
         </div>
-        <form action="">
-            <div class="formulario1">
-                <h1>REGISTRARSE</h1>
-                <div class="conte-forms">
-                    <div class="conte-form1">
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" id="nombre">
-                        <label for="gmail">Gmail</label>
-                        <input type="text" id="gmail">
-                    </div>
-                    <div class="conte-form2">
-                        <label for="contraseña">Contraseña</label>
-                        <input type="password" id="contraseña">
-                        <label for="telefono">Telefono</label>
-                        <input type="number" id="telefono">
-                    </div>
+        <div class="backgroud_cita">
+            <h1>Agenda tu cita</h1>
+            <form action="">
+                <div class="formulario1">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario">
+                    <label for="gmail">Gmail</label>
+                    <input type="email" id="gmail">
+                    <main class="contenedor">
+                        <section class="mes">
+                            <h2 class="nombre_mes">AGOSTO</h2>
+                        </section>
+                        <section class="dias">
+                            <div class="dias_item">Domingo</div>
+                            <div class="dias_item">Lunes</div>
+                            <div class="dias_item">Martes</div>
+                            <div class="dias_item">Miercoles</div>
+                            <div class="dias_item">Jueves</div>
+                            <div class="dias_item">Viernes</div>
+                            <div class="dias_item">Sabado</div>
+                        </section>
+                
+                        <section class="calendario">
+                            <div class="calendario_dia1">28</div>
+                            <div class="calendario_dia1">29</div>
+                            <div class="calendario_dia1">30</div>
+                            <div class="calendario_dia1">31</div>
+                            <div class="calendario_dia">1</div>
+                            <div class="calendario_dia">2</div>
+                            <div class="calendario_dia">3</div>
+                            <div class="calendario_dia">4</div>
+                            <div class="calendario_dia">5</div>
+                            <div class="calendario_dia">6</div>
+                            <div class="calendario_dia">7</div>
+                            <div class="calendario_dia">8</div>
+                            <div class="calendario_dia">9</div>
+                            <div class="calendario_dia">10</div>
+                            <div class="calendario_dia">11</div>
+                            <div class="calendario_dia">12</div>
+                            <div class="calendario_dia">13</div>
+                            <div class="calendario_dia">14</div>
+                            <div class="calendario_dia">15</div>
+                            <div class="calendario_dia">16</div>
+                            <div class="calendario_dia">17</div>
+                            <div class="calendario_dia">18</div>
+                            <div class="calendario_dia">19</div>
+                            <div class="calendario_dia">20</div>
+                            <div class="calendario_dia">21</div>
+                            <div class="calendario_dia">22</div>
+                            <div class="calendario_dia">23</div>
+                            <div class="calendario_dia">24</div>
+                            <div class="calendario_dia">25</div>
+                            <div class="calendario_dia">26</div>
+                            <div class="calendario_dia">27</div>
+                            <div class="calendario_dia">28</div>
+                            <div class="calendario_dia">29</div>
+                            <div class="calendario_dia">30</div>
+                            <div class="calendario_dia">31</div>
+                        </section>
+                    </main>
                 </div>
-            </div>
-            <div class="formulario2">
-                <h1>Mi peludo</h1>
-                <div class="form-pel">
-                    <div>
-                        <label for="p-nombre">Nombre</label>
-                        <input type="text" id="p-nombre">
+                <div class="formulario2">
+                    <label for="celular">Celular</label>
+                    <input type="number" id="celular">
+                    <label for="servicio">Servicios</label>
+                    <select id="servicio">
+                        <option value="">Consulta general</option>
+                        <option value="">Consulta nutricional</option>
+                        <option value="">Tratamiento de herida</option>
+                        <option value="">Vacunas</option>
+                        <option value="">Urgencias</option>
+                        <option value="">Cirugias</option>
+                    </select>
+                    <label for="especialista">Especialista</label>
+                    <input type="text" id="especialista">
+                    <div class="boton-container">
+                        <input type="radio" id="boton1" name="opcion" checked>
+                        <label for="boton1">
+                            <img src="citas-imgs/Cat Profile.png" alt="Imagen 1">
+                        </label>
+                
+                        <input type="radio" id="boton2" name="opcion">
+                        <label for="boton2">
+                            <img src="citas-imgs/Dog.png" alt="Imagen 2">
+                        </label>
                     </div>
-                    <div>
-                        <label for="p-genero">Genero</label>
-                        <select name="" id="p-genero">
-                            <option value="">M</option>
-                            <option value="">F</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="p-edad">Edad</label>
-                        <input type="number" id="p-edad">
-                    </div>
-                    <div>
-                        <label for="p-raza">Raza</label>
-                        <select name="" id="p-raza"></select>
-                    </div>
+                    <button type="submit">Apartar cita</button>
                 </div>
-                <input type="checkbox" name="" id="autorizacion">
-                <label for="autorizacion" class="autorizacion">Autorizo el tratamiento de mis datos personales</label>
-                <div class="boton-container">
-                    <input type="radio" id="boton1" name="opcion" checked>
-                    <label for="boton1">
-                        <img src="citas-imgs/Cat Profile.png" alt="Imagen 1">
-                    </label>
-            
-                    <input type="radio" id="boton2" name="opcion">
-                    <label for="boton2">
-                        <img src="citas-imgs/Dog.png" alt="Imagen 2">
-                    </label>
-                </div>
-                <button type="submit">Registrarse</button>
-            </div>
-        </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </form>
+        </div>
         <footer>
             <div class="contenido">
                 <h3 class="t_pie">CONTACTANOS</h3>

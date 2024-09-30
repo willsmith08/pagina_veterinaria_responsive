@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #faf8f8;
 }
 
 header{
@@ -186,170 +187,307 @@ footer{
     font-size: 20px;
     box-shadow: 1.5px 1.5px 5px #767676;
 }
-.compra{
-    position: absolute;
-    right: 0%;
-    top: 450px;
-    width: 85px;
-    height: 85px;
-    position: fixed;
-    z-index:1000;
-}
-.carrito{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #D9D9D9;
-    background-size: cover;
-    background-position: center;
-    opacity: 40%;
-    width: 85px;
-    height: 85px;
-    z-index:-1;
-    
-}
-.carrito_compra{
-    position: relative;
-    left: 8.5%;
-    top: 6%;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-image: url(Index-imgs/img\ carrito_compra.png);
-    background-repeat: no-repeat;
-    width: 75px;
-    height: 75px;
-    background-size: cover;
-}
-
-form{
-    margin-top: 15px;
-    background-size: cover;
-    background-position: center;
-    background-image: url(registrarse-imgs/fondo.png);
-    min-height: 850px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-.formulario1, .formulario2{
-    border-radius: 10px;
-    border: 4px solid #fff;
-    margin-top: 50px;
-    background-color: #0000005b;
-    width: 800px;
-    min-height: 350px;
-    text-align: center;
-    align-content: center;
-}
-.formulario1 h1, .formulario2 h1{
-    font-family: sans-serif;
-    color: #FF5D5D;
-}
-.conte-forms{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-.conte-forms label{
-    display: block;
-    text-align: justify;
-    color: #fff;
-    font-family: sans-serif;
-    margin: 0 10px 0 10px;
-}
-.conte-forms input{
-    width: 250px;
-    height: 30px;
-    margin: 0 10px 50px 10px;
+.producto-carrito{
     border-radius: 5px;
-    border: none;
-}
-.formulario2{
+    box-shadow: 1.5px 1.5px 5px #767676;
     margin-bottom: 20px;
-    color: #fff;
 }
-.form-pel{
+.conenido_carrito{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin: 0 10px;
+    margin-top: 80px;
+    gap: 30px;
+    position: relative;
 }
-.form-pel label{
-    display: block;
-    text-align: justify;
-}
-.form-pel input{
-    width: 230px;
-    height: 30px;
+.header-producto, .header-producto2, .header-producto3, .header-producto4{
+    display: flex;
+    padding: 1px;
+    background: #F99C46;
+    width: 700px;
     border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: #3a3a3a;
+    align-items: center;
+    position: relative;
+    box-shadow: 1.5px 1.5px 5px #767676;
 }
-.form-pel select{
+.header-producto h4, .header-producto2 h4, .header-producto3 h4, .header-producto4 h4{
+    margin-left: 30px;
+}
+.huella{
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+}
+.x{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 3%;
+}
+.contenido-car-pro{
+    display: flex;
+    width: 700px;
+    height: 170px;
+    margin-top: 20px;
+    position: relative;
+}
+.img-pro{
+    margin-left: 30px;
     width: 100px;
-    height: 30px;
+    height: 150px;
+}
+.nombre-pro{
+    position: absolute;
+    left: 130px;
+    width: 160px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.tienda{
+    color: #F91919;
+    font-size: 12px;
+    position: absolute;
+    left: 170px;
+    top: 60px;
+}
+.comprar{
+    position: absolute;
+    left: 220px;
+    top: 90px;
+    color: #10C6BB;
+
+}
+.can-dis{
+    position: absolute;
+    left: 400px;
+    top: 40px;
+}
+.can-dis select{
+    width: 100%;
+    height: 25px;
+    border-radius: 7x;
+    border: 3px solid #000;
+}
+.dispo{
+    padding: 0;
+    margin: 0;
+    color: #3e3e3e;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.precios{
+    position: absolute;
+    left: 550px;
+    top: 40px;
+}
+.porcen-pre_ante{
+    display: flex;
+    margin: 0;
+    font-family: sans-serif;
+}
+.porcen-pre_ante p{
+    margin: 0;
+}
+.porcentaje{
+    color: #2AAD1E;
+}
+.precio_anterior{
+    text-decoration: line-through;
+}
+.precio_actual{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+.ul-div{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    border-top: 3px solid #00000042 ;
+    padding: 5px 0;
+}
+.ul-div span{
+    position: absolute;
+    right: 2%;
+}
+
+.contenido2{
+    position: sticky;
+    top: 230px;
+    width: 250px;
+    height: 310px;
+    box-shadow: 1.5px 1.5px 5px #767676;
+    font-family: sans-serif;
     border-radius: 5px;
+}
+.contenido2 h5{
+    padding: 0 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #0000003f;
+}
+.total_tablet-tel{
+    background: #fff;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 1.5px 1.5px 5px #767676;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    display: none;
+}
+.total_tablet-tel p{
+    padding: 0 10px;
+}
+.can_pro-to{
+    display: flex;
+    justify-content: space-between;
+}
+.tot{
+    border-top: 2px solid #00000052;
+}
+.tot, .usu{
+    display: flex;
+    justify-content: space-between;
+}
+.ubi{
+    color: #4676F3;
+}
+.usu p:nth-child(2){
+    color: #4676F3;
+}
+button{
+    width: 100%;
+    height: 30px;
+    background: #4676F3;
     border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-#autorizacion{
-    margin-left: 5%;
+.header-producto2{
+    background: #3AB7A0;
 }
-.autorizacion, #autorizacion{
-    margin: 10px 0;
+.header-producto3{
+    background: #61B5C8;
 }
-.boton-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.header-producto4{
+    background: #ACB4FF;
+}
+.contenedor-pro{
+    height: 550px;
+    background: #d6d6d6;
+    font-family: sans-serif;
+}
+.contenedor-pro h3{
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    position: relative;
+    top: 30px;
+}
+.contenido-inte{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    height: 400px;
+    margin-top: 70px;
+    gap: 3%;
 }
-.boton-container input[type="radio"] {
-    display: none; 
+.flecha{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
 }
-.boton-container label {
+
+.producto, .producto2, .producto3{
+    background-color: white;
+    width: 270px;
+    height: 385px;
+    margin-bottom: 40px;
+    border-radius: 2%;
+    box-shadow: 1.5px 1.5px 5px #767676;
     text-align: center;
-    align-content: center;
-    width: 45px;
-    height: 45px; 
-    border: 4px solid #fff; 
-    border-radius: 50px; 
-    cursor: pointer;
+    position: relative;
 }
-.boton-container img {
-    height: 35px;
+.producto h5, .producto2 h5, .producto3 h5{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 13%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
-input[type="radio"]:checked + label {
-    background-color: #3355AB; 
-    border-color: #fff; 
+.producto p, .producto2 p, .producto3 p{
+    position: relative;
+    top: -13px;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10%;
 }
-.formulario2 button{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #07B0A6;
-    color: #fff;
+.pro_img{
+    height: 55%;
+    border-bottom: 2px solid #00000022;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 6%;
+}
+#cantidad{
+    font-size: 15px;
+    height: 25px;
+    position: relative;
+    left: 30%;
     border: none;
-    cursor: pointer;
+    outline: none;
+}
+.conte_pro{
+    display: flex;
+}
+.carrito_pro{
+    width: 8%;
+    height: 10%;
+    position: relative;
+    left: 35%;
+}
+.imgcar{
+    width: 28px;
+}
+.tex_comp{
+    background-color: #10C6BB;
+    align-content: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 17px;
+    position: relative;
+    top: -10px;
+    color: black;
+    border: none;
+}
+.pro{
+    background-color: #10C6BB;
+    align-content: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 17px;
+    position: relative;
+    top: 6px;
+    color: black;
+    border: none;
 }
 
-
-
-
-
-
-
-
-
-
+.pro:hover{
+    background: #03FFF0;
+}
+.tex_comp:hover{
+    background: #03FFF0;
+}
 
 
 
@@ -377,14 +515,11 @@ input[type="radio"]:checked + label {
     display: none;
 }
 @media (max-width: 1085px) {
+    .producto2{
+        display: none;
+    }
     .opc_pantalla{
         font-size: 17px;
-    }
-    .compra{
-        position: absolute;
-        top: 400px;
-        position: fixed;
-        z-index:1000;
     }
 }
 @media (max-width: 1209px) {
@@ -394,9 +529,14 @@ input[type="radio"]:checked + label {
     }
 }
 @media (max-width: 1000px) {
-    .formulario1, .formulario2{
-        width: 90%;
-        min-height: 200px;
+    .conenido_carrito{
+        margin-top: 10px;
+    }
+    .total_tablet-tel{
+        display: flex;
+    }
+    .contenido2{
+        display: none;
     }
     .ini-regi{
         width: 250px;
@@ -480,9 +620,6 @@ input[type="radio"]:checked + label {
     .qr{
         width: 250px;
     }
-    .compra{
-        display: none;
-    }
     .carrito-deb{
         height: 40px;
         margin-top: 5px;
@@ -490,10 +627,6 @@ input[type="radio"]:checked + label {
     }
     .opcs_pantallas, header p{
         display: none;
-    }
-    .compra{
-        position: absolute;
-        top: 40%;
     }
     .phone-contac{
         display: flex;
@@ -572,7 +705,52 @@ input[type="radio"]:checked + label {
         right: 0;
     }
 }
+@media (max-width: 732px){
+    .producto3{
+        display: none;
+    }
+}
+@media (max-width: 720px){
+    .conenido_carrito{
+        margin: 5px;
+    }
+    .contenido1{
+        width: 100%;
+    }
+    .producto-carrito{
+        width: 100%;
+    }
+    .header-producto, .header-producto2, .header-producto3, .header-producto4{
+        width: 100%;
+    }
+    .tienda{
+        display: none;
+    }
+    .can-dis{
+        position: absolute;
+        left: 170px;
+        top: 120px;
+    }
+    .precios{
+        position: absolute;
+        left: 70%;
+        top: 55px;
+    }
+    .comprar{
+        position: absolute;
+        top: 175px;
+    }
+    .ul-div span{
+        display: none;
+    }
+    .contenido-car-pro{
+        width: 100%;
+    }
+}
 @media (max-width: 480px) {
+    .producto{
+        width: 230px;
+    }
     .iniciar_sesion2{
         display: block;
         background: #0A988F;
@@ -626,5 +804,10 @@ input[type="radio"]:checked + label {
     .container_debajo_header{
         position: sticky;
         top: 150px;
+    }
+}
+@media (max-width: 390px){
+    .precio_actual{
+        font-size: 20px;
     }
 }

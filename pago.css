@@ -186,164 +186,211 @@ footer{
     font-size: 20px;
     box-shadow: 1.5px 1.5px 5px #767676;
 }
-.compra{
-    position: absolute;
-    right: 0%;
-    top: 450px;
-    width: 85px;
-    height: 85px;
-    position: fixed;
-    z-index:1000;
-}
-.carrito{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #D9D9D9;
-    background-size: cover;
-    background-position: center;
-    opacity: 40%;
-    width: 85px;
-    height: 85px;
-    z-index:-1;
-    
-}
-.carrito_compra{
-    position: relative;
-    left: 8.5%;
-    top: 6%;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-image: url(Index-imgs/img\ carrito_compra.png);
-    background-repeat: no-repeat;
-    width: 75px;
-    height: 75px;
-    background-size: cover;
-}
-
-form{
-    margin-top: 15px;
-    background-size: cover;
-    background-position: center;
-    background-image: url(registrarse-imgs/fondo.png);
-    min-height: 850px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-.formulario1, .formulario2{
-    border-radius: 10px;
-    border: 4px solid #fff;
-    margin-top: 50px;
-    background-color: #0000005b;
-    width: 800px;
-    min-height: 350px;
-    text-align: center;
-    align-content: center;
-}
-.formulario1 h1, .formulario2 h1{
-    font-family: sans-serif;
-    color: #FF5D5D;
-}
-.conte-forms{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-.conte-forms label{
-    display: block;
-    text-align: justify;
-    color: #fff;
-    font-family: sans-serif;
-    margin: 0 10px 0 10px;
-}
-.conte-forms input{
-    width: 250px;
-    height: 30px;
-    margin: 0 10px 50px 10px;
-    border-radius: 5px;
-    border: none;
-}
-.formulario2{
-    margin-bottom: 20px;
-    color: #fff;
-}
-.form-pel{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin: 0 10px;
-}
-.form-pel label{
-    display: block;
-    text-align: justify;
-}
-.form-pel input{
-    width: 230px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-}
-.form-pel select{
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-}
-#autorizacion{
-    margin-left: 5%;
-}
-.autorizacion, #autorizacion{
-    margin: 10px 0;
-}
-.boton-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.boton-container input[type="radio"] {
-    display: none; 
-}
-.boton-container label {
-    text-align: center;
-    align-content: center;
-    width: 45px;
-    height: 45px; 
-    border: 4px solid #fff; 
-    border-radius: 50px; 
+.atras{
+    text-transform: uppercase;
     cursor: pointer;
-}
-.boton-container img {
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 2px;
     height: 35px;
-}
-input[type="radio"]:checked + label {
-    background-color: #3355AB; 
-    border-color: #fff; 
-}
-.formulario2 button{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #07B0A6;
-    color: #fff;
+    width: 120px;
     border: none;
-    cursor: pointer;
+    background: #10C6BB;
+    color: #fff;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
 }
-
-
-
-
+.contenido-pago{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 0 2%;
+}
+.produ{
+    border-radius: 5px;
+    background: #d3d3d3;
+    width: 600px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+.produ-p{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.pro p{
+    width: 200px;
+    text-align: center;
+}
+.pro{
+    margin: 10px 4%;
+    width: 550px;
+    height: 130px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+.pro img{
+    margin: 0 30px;
+}
+.pro select{
+    border: 3px solid #000;
+    border-radius: 3px;
+    margin-left: 10%;
+    width: 15%;
+}
+.contra-transfe{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.pago{
+    border-radius: 5px;
+    background: #E0E0E0;
+    width: 300px;
+    height: 350px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+.l{
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    width: 100px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+.pago input[type="radio"]{
+    display: none;
+}
+.pago input[type="radio"]:checked + label{
+    background: #8b8b8b;
+}
+.contenedor-pago{
+    position: absolute;
+    top: 150px;
+    display: none;
+}
+#transfe:checked + label ~ .contenedor-pago{
+    display: block;
+}
+.num-tarjeta{
+    display: block;
+    text-align: justify;
+    color: #000000cb;
+    text-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+#num-tarjeta{
+    width: 250px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+.img-tarjetas{
+    display: flex;
+    position: absolute;
+    top: 18px;
+    right: 0px;
+}
+.img-tarjetas img{
+    width: 38px;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+.fecha-cvc{
+    display: flex;
+    gap: 10px;
+}
+.fecha-cvc label{
+    display: block;
+    text-align: justify;
+}
+.fecha{
+    width: 136px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+#fecha{
+    display: block;
+    height: 25px;
+    width: 136px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+.cvc{
+    font-size: 15px;
+    color: #0000009d;
+    margin-top: 20px;
+    text-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+#cvc{
+    height: 24px;
+    width: 100px;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+    border: none;
+    border-radius: 2px;
+}
+.pagar{
+    margin-top: 30px;
+    width: 170px;
+    height: 30px;
+    background: #0A988F;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contenedor-reco{
+    position: absolute;
+    top: 150px;
+    display: none;
+}
+.usuario{
+    text-align: justify;
+    display: block;
+    text-shadow: 1.5px 1.5px 5px #8b8b8b;
+}
+#usuario{
+    width: 230px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+    display: block;
+}
+.can{
+    background: #fff;
+    margin-top: 20px;
+    width: 235px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+    display: block;
+    align-content: center;
+}
+.apartar{
+    margin-top: 30px;
+    width: 170px;
+    height: 30px;
+    color: #fff;
+    box-shadow: 1.5px 1.5px 5px #8b8b8b;
+    border: none;
+    border-radius: 3px;
+    background: #0A988F;
+}
+#contra:checked + .l ~ .contenedor-reco{
+    display: block;
+}
 
 
 
@@ -394,9 +441,8 @@ input[type="radio"]:checked + label {
     }
 }
 @media (max-width: 1000px) {
-    .formulario1, .formulario2{
-        width: 90%;
-        min-height: 200px;
+    .produ{
+        margin-top: -15px;
     }
     .ini-regi{
         width: 250px;
@@ -570,6 +616,30 @@ input[type="radio"]:checked + label {
     }
     #check:checked ~ .menu{
         right: 0;
+    }
+}
+@media (max-width: 608px){
+    .produ{
+        border-radius: 0;
+        width: 100%;
+    }
+    .pro{
+        width: 90%;
+        position: relative;
+    }
+    .pro p{
+        position: absolute;
+        top: 5px;
+        left: 100px;
+    }
+    .pro select{
+        position: absolute;
+        top: 90px;
+        left: 130px;
+    }
+    .pago{
+
+        width: 100%;
     }
 }
 @media (max-width: 480px) {

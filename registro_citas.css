@@ -186,133 +186,125 @@ footer{
     font-size: 20px;
     box-shadow: 1.5px 1.5px 5px #767676;
 }
-.compra{
-    position: absolute;
-    right: 0%;
-    top: 450px;
-    width: 85px;
-    height: 85px;
-    position: fixed;
-    z-index:1000;
-}
-.carrito{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #D9D9D9;
-    background-size: cover;
-    background-position: center;
-    opacity: 40%;
-    width: 85px;
-    height: 85px;
-    z-index:-1;
-    
-}
-.carrito_compra{
-    position: relative;
-    left: 8.5%;
-    top: 6%;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-image: url(Index-imgs/img\ carrito_compra.png);
-    background-repeat: no-repeat;
-    width: 75px;
-    height: 75px;
-    background-size: cover;
-}
 
-form{
-    margin-top: 15px;
+.backgroud_cita{
+    margin-top: 10px;
     background-size: cover;
+    background-repeat: repeat;
     background-position: center;
-    background-image: url(registrarse-imgs/fondo.png);
     min-height: 850px;
+    background-image: url(citas-imgs/backgroud-citas.png);
     display: flex;
     justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
 }
-.formulario1, .formulario2{
-    border-radius: 10px;
-    border: 4px solid #fff;
-    margin-top: 50px;
-    background-color: #0000005b;
-    width: 800px;
-    min-height: 350px;
-    text-align: center;
-    align-content: center;
-}
-.formulario1 h1, .formulario2 h1{
+h1{
+    font-size: 40px;
     font-family: sans-serif;
-    color: #FF5D5D;
-}
-.conte-forms{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-.conte-forms label{
-    display: block;
-    text-align: justify;
     color: #fff;
-    font-family: sans-serif;
-    margin: 0 10px 0 10px;
+    position: absolute;
+    top: 100px;
+    text-shadow: 1.5px 1.5px 5px #767676;
 }
-.conte-forms input{
-    width: 250px;
-    height: 30px;
-    margin: 0 10px 50px 10px;
-    border-radius: 5px;
-    border: none;
-}
-.formulario2{
+.backgroud_cita form{
     margin-bottom: 20px;
+    background-color: #00000042;
+    max-width: 750px;
+    min-height: 700px;
+    border-radius: 15px;
+    display: flex;
     color: #fff;
-}
-.form-pel{
+    text-shadow: 1.5px 1.5px 5px #767676;
+    font-family: sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin: 0 10px;
+    align-items: center;
 }
-.form-pel label{
+form div{
+    margin-top: 80px;
+    text-align: center;
+}
+form label{
+    margin: 0 50px;
     display: block;
     text-align: justify;
+    text-shadow: 1.5px 1.5px 5px #767676;
 }
-.form-pel input{
-    width: 230px;
-    height: 30px;
+form input, form select{
+    color: #fff;
+    margin: 0 50px;
+    width: 250px;
+    margin-bottom: 20px;
+    height: 35px;
     border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
+    border: 3px solid #fff;
+    background-color: #ffffff00;
+    box-shadow: 1.5px 1.5px 5px #767676;
 }
-.form-pel select{
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
+.contenedor{
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff00;
+    box-shadow: 0 0.1vw 0.5vw #818181;
+    border-radius: 20px;
+    text-align: center;
 }
-#autorizacion{
-    margin-left: 5%;
+.nombre_mes{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
 }
-.autorizacion, #autorizacion{
-    margin: 10px 0;
+.dias_item{
+    margin-top: 0;
+}
+.dias{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    height: 10px;
+    font-size: 10px;
+}
+.calendario{
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-auto-rows: 40px;
+}
+.calendario_dia{
+    padding: 15px;
+    text-align: center;
+    margin-top: 0;
+}
+.calendario_dia1{
+    padding: 15px;
+    text-align: center;
+    color: #5d5d5d;
+    margin-top: 0;
+}
+.calendario_dia:hover{
+    background: #5EB9C3;
+}
+.contenedor_boton{
+    margin-top: 10%;
+    display: flex;
+    justify-items: center;
+}
+.contenedor_boton input{
+    border: 1px solid #fff;
+    height: 3.5vw;
 }
 .boton-container {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    gap: 20px;
 }
+
 .boton-container input[type="radio"] {
     display: none; 
 }
+
 .boton-container label {
     text-align: center;
     align-content: center;
@@ -322,24 +314,36 @@ form{
     border-radius: 50px; 
     cursor: pointer;
 }
+
 .boton-container img {
     height: 35px;
 }
+
 input[type="radio"]:checked + label {
     background-color: #3355AB; 
     border-color: #fff; 
 }
-.formulario2 button{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #07B0A6;
+button{
+    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 150px;
+    padding: 10px 5px;
+    border-radius: 0.4vw;
+    border: 2px solid #fff;
+    background-color: #ffffff00;
     color: #fff;
-    border: none;
+    font-size: 20px;
     cursor: pointer;
 }
+.formulario2 input, .formulario2 select{
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
 
 
 
@@ -380,12 +384,6 @@ input[type="radio"]:checked + label {
     .opc_pantalla{
         font-size: 17px;
     }
-    .compra{
-        position: absolute;
-        top: 400px;
-        position: fixed;
-        z-index:1000;
-    }
 }
 @media (max-width: 1209px) {
     .opcs_pantallas{
@@ -394,9 +392,8 @@ input[type="radio"]:checked + label {
     }
 }
 @media (max-width: 1000px) {
-    .formulario1, .formulario2{
-        width: 90%;
-        min-height: 200px;
+    .backgroud_cita form{
+        width: 80%;
     }
     .ini-regi{
         width: 250px;
@@ -479,9 +476,6 @@ input[type="radio"]:checked + label {
     }
     .qr{
         width: 250px;
-    }
-    .compra{
-        display: none;
     }
     .carrito-deb{
         height: 40px;
@@ -570,6 +564,15 @@ input[type="radio"]:checked + label {
     }
     #check:checked ~ .menu{
         right: 0;
+    }
+}
+@media (max-width: 904px){
+    h1{
+        position: absolute;
+        top: 20px;
+    }
+    form{
+        margin-top: 30px;
     }
 }
 @media (max-width: 480px) {
