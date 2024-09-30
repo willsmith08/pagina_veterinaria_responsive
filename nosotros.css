@@ -441,6 +441,7 @@ footer{
         width: 70%;
     }
 }
+
 @media (max-width: 1000px) {
     .contenodor_info{
         margin-top: 10px;

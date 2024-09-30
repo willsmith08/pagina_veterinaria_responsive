@@ -421,6 +421,12 @@ input[type="radio"]:checked + .opcion {
     #user2:checked ~ .ini-regi{
         display: block;
     }
+    .tex_comp{
+        cursor: pointer;
+    }
+    .tex_comp{
+        cursor: pointer;
+    }
     .notificacion header{
         background: #C8C8C8;
         height: 100px;
