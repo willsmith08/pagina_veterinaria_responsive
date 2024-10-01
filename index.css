@@ -97,17 +97,17 @@ a {
 .slides li:nth-child(1){
     opacity: 1;
     animation: fade 20s infinite;
-    animation-delay: 0s;
+    animation-delay: 2.5s;
 }
 .slides li:nth-child(2){
     opacity: 1;
     animation: fade 20s infinite;
-    animation-delay: 4s;
+    animation-delay: 2.5s;
 }
 .slides li:nth-child(3){
     opacity: 1;
     animation: fade 20s infinite;
-    animation-delay: 8s;
+    animation-delay: 2.5s;
 }
 .slides li{
     width: 100%;
