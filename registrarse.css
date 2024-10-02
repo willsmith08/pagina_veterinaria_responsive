@@ -655,4 +655,24 @@ input[type="radio"]:checked + label {
         position: sticky;
         top: 150px;
     }
+    .arriba-header .soc{
+        display: none;
+    }
+    .opcs-tel .opc-tel:nth-child(1){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .opc-tel img{
+        width: 60px;
+        height: 53px;
+    }
+    .opc-tel:nth-child(4) img{
+        width: 60px;
+        height: 60px;
+    }
+    .opcs-tel .sociale{
+        width: 30px;
+        height: 30px;
+    }
 }
