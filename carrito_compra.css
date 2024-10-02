@@ -833,11 +833,6 @@ button{
         position: sticky;
         top: 150px;
     }
-}
-@media (max-width: 390px){
-    .precio_actual{
-        font-size: 20px;
-    }
     .arriba-header .soc{
         display: none;
     }
@@ -861,4 +856,10 @@ button{
     .opc-tel{
         box-shadow: 1.5px 1.5px 5px #3d3d3d;
     }
+}
+@media (max-width: 390px){
+    .precio_actual{
+        font-size: 20px;
+    }
+    
 }
