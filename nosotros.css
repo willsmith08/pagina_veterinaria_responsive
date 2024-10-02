@@ -409,7 +409,7 @@ footer{
 
 
 
-.iniciar_sesion2{
+.iniciar_sesion2, .opcs-tel{
     display: none;
 }
 @media (max-width: 1605px) {
@@ -668,6 +668,34 @@ footer{
     }
 }
 @media (max-width: 480px) {
+    .container_debajo_header .user2, .container_debajo_header .noti2, .container_debajo_header .carrito-deb{
+        display: none;
+    }
+    .ini-regi{
+        position: absolute;
+        top: 140px;
+    }
+    .carrito-deb{
+        margin-left: 0;
+    }
+    .opc-tel{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #011820;
+    }
+    .opcs-tel{
+        height: 290px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 40px;
+        justify-content: center;
+        align-items: center;
+    }
     .persona img{
         height: 300px;
     }
