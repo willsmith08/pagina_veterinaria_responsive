@@ -687,4 +687,7 @@ footer{
         width: 30px;
         height: 30px;
     }
+    .opc-tel{
+        box-shadow: 1.5px 1.5px 5px #3d3d3d;
+    }
 }
