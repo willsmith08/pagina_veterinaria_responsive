@@ -2,7 +2,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.todo_fijado{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 header{
     position: relative;
     background-color: #088199;
@@ -91,23 +95,7 @@ a {
     width: 300%;
     display: flex;
     width: 300%;
-
-    animation: slide 20s infinite alternate step-end;
-}
-.slides li:nth-child(1){
-    opacity: 1;
-    animation: fade 20s infinite;
-    animation-delay: 2.5s;
-}
-.slides li:nth-child(2){
-    opacity: 1;
-    animation: fade 20s infinite;
-    animation-delay: 2.5s;
-}
-.slides li:nth-child(3){
-    opacity: 1;
-    animation: fade 20s infinite;
-    animation-delay: 2.5s;
+    animation: slide 10s infinite alternate step-end;
 }
 .slides li{
     width: 100%;
@@ -384,12 +372,7 @@ footer{
     50%, 70%{margin-left: -200%;}
 }
 
-@keyframes fade {
-    0%, 20% { opacity: 1;}
 
-    30%, 50% { opacity: 0;}
-    60%, 80% { opacity: 1;}
-}
 @media (max-width: 1085px) {
     .opc_pantalla{
         font-size: 17px;
